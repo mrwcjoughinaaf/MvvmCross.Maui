@@ -6,6 +6,16 @@ updates:
     interval: daily
   open-pull-requests-limit: 10
   groups:
-    dev-dependencies:
+    android-dependencies:
       patterns:
         - "Xamarin.*"
+    unittest-dependencies:
+      patterns:
+        - "xunit"
+        - "xunit.*"
+        - "XunitXml.*"
+        - "Microsoft.NET.Test.Sdk"
+    analyzers:
+      patterns:
+        - "AsyncFixer"
+        - "*Analyzer*"
