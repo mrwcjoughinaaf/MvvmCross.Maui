@@ -7,21 +7,21 @@
     <OutputType>Exe</OutputType>
     <SupportedOSPlatformVersion>23</SupportedOSPlatformVersion>
   </PropertyGroup>
-  <!-- <ItemGroup> -->
-    <!-- <PackageReference Include="Serilog" Version="3.0.2-dev-02056" /> -->
-    <!-- <PackageReference Include="Serilog.Sinks.Async" Version="1.5.0" /> -->
-    <!-- <PackageReference Include="Serilog.Sinks.Trace" Version="3.0.0" /> -->
-    <!-- <PackageReference Include="Serilog.Extensions.Logging" Version="7.0.0" /> -->
-    <!-- <PackageReference Include="Microsoft.Maui.Essentials" Version="8.0.0-rc.1.9171" /> -->
-  <!-- </ItemGroup> -->
   <ItemGroup>
-    <ProjectReference Include="..\..\..\MvvmCross.DroidX\Material\MvvmCross.DroidX.Material.csproj" />
-    <ProjectReference Include="..\..\..\MvvmCross.DroidX\RecyclerView\MvvmCross.DroidX.RecyclerView.csproj" />
-    <ProjectReference Include="..\..\..\MvvmCross.Plugins\Color\MvvmCross.Plugin.Color.csproj" />
-    <ProjectReference Include="..\..\..\MvvmCross.Plugins\JsonLocalization\MvvmCross.Plugin.JsonLocalization.csproj" />
-    <ProjectReference Include="..\..\..\MvvmCross.Plugins\Json\MvvmCross.Plugin.Json.csproj" />
-    <ProjectReference Include="..\..\..\MvvmCross.Plugins\ResourceLoader\MvvmCross.Plugin.ResourceLoader.csproj" />
-    <ProjectReference Include="..\..\..\MvvmCross\MvvmCross.csproj" />
-    <ProjectReference Include="..\Playground.Core\Playground.Core.csproj" />
+    <PackageReference Include="Serilog"/>
+    <PackageReference Include="Serilog.Sinks.Async"/>
+    <PackageReference Include="Serilog.Sinks.Trace"/>
+    <PackageReference Include="Serilog.Extensions.Logging"/>
+    <PackageReference Include="Microsoft.Maui.Essentials"/>
+  </ItemGroup>
+  <ItemGroup>
+    <!--    <ProjectReference Include="..\..\..\MvvmCross.DroidX\Material\MvvmCross.DroidX.Material.csproj" />-->
+    <!--    <ProjectReference Include="..\..\..\MvvmCross.DroidX\RecyclerView\MvvmCross.DroidX.RecyclerView.csproj" />-->
+    <ProjectReference Include="..\..\..\MvvmCross.Plugins\Color\MvvmCross.Plugin.Color.csproj"/>
+    <ProjectReference Include="..\..\..\MvvmCross.Plugins\JsonLocalization\MvvmCross.Plugin.JsonLocalization.csproj"/>
+    <ProjectReference Include="..\..\..\MvvmCross.Plugins\Json\MvvmCross.Plugin.Json.csproj"/>
+    <ProjectReference Include="..\..\..\MvvmCross.Plugins\ResourceLoader\MvvmCross.Plugin.ResourceLoader.csproj"/>
+    <ProjectReference Include="..\..\..\MvvmCross\MvvmCross.csproj"/>
+    <ProjectReference Include="..\Playground.Core\Playground.Core.csproj"/>
   </ItemGroup>
 </Project>

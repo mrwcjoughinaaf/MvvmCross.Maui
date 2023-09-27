@@ -4,8 +4,8 @@
 
 using Android.App;
 using Android.Content.PM;
-using AndroidX.Core.View;
-using AndroidX.DrawerLayout.Widget;
+//using AndroidX.Core.View;
+//using AndroidX.DrawerLayout.Widget;
 using MvvmCross.Platforms.Android.Presenters.Attributes;
 using MvvmCross.Platforms.Android.Views;
 using Playground.Core.ViewModels;

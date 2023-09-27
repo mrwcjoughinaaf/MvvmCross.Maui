@@ -145,7 +145,8 @@ public abstract class MvxAndroidSetup
 
     protected virtual IMvxAndroidViewPresenter CreateViewPresenter()
     {
-        return new MvxAndroidViewPresenter(AndroidViewAssemblies);
+        throw new NotSupportedException();
+        // return new MvxAndroidViewPresenter(AndroidViewAssemblies);
     }
 
     protected override IMvxViewDispatcher CreateViewDispatcher()

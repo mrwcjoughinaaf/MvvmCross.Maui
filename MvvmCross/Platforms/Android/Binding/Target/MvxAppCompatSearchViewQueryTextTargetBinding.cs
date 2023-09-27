@@ -4,7 +4,7 @@
 
 using MvvmCross.Binding;
 using MvvmCross.Platforms.Android.WeakSubscription;
-using SearchView = AndroidX.AppCompat.Widget.SearchView;
+// using SearchView = AndroidX.AppCompat.Widget.SearchView;
 
 namespace MvvmCross.Platforms.Android.Binding.Target
 {

@@ -5,7 +5,7 @@
 using System;
 using Android.Content;
 using Android.Runtime;
-using AndroidX.RecyclerView.Widget;
+//using AndroidX.RecyclerView.Widget;
 using Java.Lang;
 using Microsoft.Extensions.Logging;
 using MvvmCross.Logging;

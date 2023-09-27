@@ -2,9 +2,10 @@
 // The .NET Foundation licenses this file to you under the MS-PL license.
 // See the LICENSE file in the project root for more information.
 
+using Android.Preferences;
 using Android.Views;
 using Android.Webkit;
-using AndroidX.Preference;
+// //using AndroidX.Preference;
 using MvvmCross.Binding;
 using MvvmCross.Binding.BindingContext;
 using MvvmCross.Binding.Bindings.Target.Construction;
@@ -17,8 +18,8 @@ using MvvmCross.Platforms.Android.Binding.BindingContext;
 using MvvmCross.Platforms.Android.Binding.ResourceHelpers;
 using MvvmCross.Platforms.Android.Binding.Target;
 using MvvmCross.Platforms.Android.Binding.Views;
-using AppCompatSearchView = AndroidX.AppCompat.Widget.SearchView;
-using Toolbar = AndroidX.AppCompat.Widget.Toolbar;
+// using AppCompatSearchView = AndroidX.AppCompat.Widget.SearchView;
+// using Toolbar = AndroidX.AppCompat.Widget.Toolbar;
 
 namespace MvvmCross.Platforms.Android.Binding
 {
@@ -282,23 +283,23 @@ namespace MvvmCross.Platforms.Android.Binding
                 MvxAndroidPropertyBinding.WebView_Html,
                 view => new MvxWebViewHtmlTargetBinding(view));
 
-            registry.RegisterPropertyInfoBindingFactory(
-                typeof(MvxAppCompatAutoCompleteTextViewPartialTextTargetBinding),
-                typeof(MvxAppCompatAutoCompleteTextView),
-                MvxAndroidPropertyBinding.MvxAppCompatAutoCompleteTextView_PartialText);
+            // registry.RegisterPropertyInfoBindingFactory(
+                // typeof(MvxAppCompatAutoCompleteTextViewPartialTextTargetBinding),
+                // typeof(MvxAppCompatAutoCompleteTextView),
+                // MvxAndroidPropertyBinding.MvxAppCompatAutoCompleteTextView_PartialText);
 
-            registry.RegisterPropertyInfoBindingFactory(
-                typeof(MvxAppCompatAutoCompleteTextViewSelectedObjectTargetBinding),
-                typeof(MvxAppCompatAutoCompleteTextView),
-                MvxAndroidPropertyBinding.MvxAppCompatAutoCompleteTextView_SelectedObject);
+            // registry.RegisterPropertyInfoBindingFactory(
+                // typeof(MvxAppCompatAutoCompleteTextViewSelectedObjectTargetBinding),
+                // typeof(MvxAppCompatAutoCompleteTextView),
+                // MvxAndroidPropertyBinding.MvxAppCompatAutoCompleteTextView_SelectedObject);
 
-            registry.RegisterCustomBindingFactory<MvxAppCompatSpinner>(
-                MvxAndroidPropertyBinding.MvxAppCompatSpinner_SelectedItem,
-                spinner => new MvxAppCompatSpinnerSelectedItemBinding(spinner));
+            // registry.RegisterCustomBindingFactory<MvxAppCompatSpinner>(
+                // MvxAndroidPropertyBinding.MvxAppCompatSpinner_SelectedItem,
+                // spinner => new MvxAppCompatSpinnerSelectedItemBinding(spinner));
 
-            registry.RegisterCustomBindingFactory<MvxAppCompatRadioGroup>(
-                MvxAndroidPropertyBinding.MvxAppCompatRadioGroup_SelectedItem,
-                radioGroup => new MvxAppCompatRadioGroupSelectedItemBinding(radioGroup));
+            // registry.RegisterCustomBindingFactory<MvxAppCompatRadioGroup>(
+                // MvxAndroidPropertyBinding.MvxAppCompatRadioGroup_SelectedItem,
+                // radioGroup => new MvxAppCompatRadioGroupSelectedItemBinding(radioGroup));
 
             registry.RegisterCustomBindingFactory<Toolbar>(
                 MvxAndroidPropertyBinding.Toolbar_Subtitle,
@@ -327,7 +328,7 @@ namespace MvvmCross.Platforms.Android.Binding
             registry.AddOrOverwrite(typeof(CompoundButton), MvxAndroidPropertyBinding.CompoundButton_Checked);
             registry.AddOrOverwrite(typeof(SeekBar), MvxAndroidPropertyBinding.SeekBar_Progress);
             registry.AddOrOverwrite(typeof(SearchView), MvxAndroidPropertyBinding.SearchView_Query);
-            registry.AddOrOverwrite(typeof(AppCompatSearchView), MvxAndroidPropertyBinding.SearchView_Query);
+            // registry.AddOrOverwrite(typeof(AppCompatSearchView), MvxAndroidPropertyBinding.SearchView_Query);
             registry.AddOrOverwrite(typeof(NumberPicker), MvxAndroidPropertyBinding.NumberPicker_Value);
             registry.AddOrOverwrite(typeof(NumberPicker), MvxAndroidPropertyBinding.NumberPicker_DisplayedValues);
             registry.AddOrOverwrite(typeof(VideoView), MvxAndroidPropertyBinding.VideoView_Uri);

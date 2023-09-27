@@ -7,8 +7,8 @@ using Android.Content;
 using Android.Runtime;
 using Android.Util;
 using Android.Views;
-using AndroidX.CoordinatorLayout.Widget;
-using AndroidX.Core.View;
+//using AndroidX.CoordinatorLayout.Widget;
+//using AndroidX.Core.View;
 using Google.Android.Material.FloatingActionButton;
 using Object = Java.Lang.Object;
 

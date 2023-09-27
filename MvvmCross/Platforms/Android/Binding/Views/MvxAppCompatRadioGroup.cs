@@ -10,7 +10,7 @@ using Android.Content;
 using Android.Runtime;
 using Android.Util;
 using Android.Widget;
-using AndroidX.AppCompat.Widget;
+//using AndroidX.AppCompat.Widget;
 using MvvmCross.Binding;
 using MvvmCross.Binding.Attributes;
 using MvvmCross.Binding.BindingContext;
@@ -52,7 +52,8 @@ namespace MvvmCross.Platforms.Android.Binding.Views
         private void OnChildViewAdded(object sender, ChildViewAddedEventArgs args)
         {
             //var li = (args.Child as MvxListItemView);
-            var radioButton = args.Child as AppCompatRadioButton;
+            // var radioButton = args.Child as AppCompatRadioButton;
+            var radioButton = args.Child as RadioButton;
 
             // radio buttons require an id so that they get un-checked correctly
             if (radioButton?.Id == NoId)

@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFrameworks>net8.0-ios;net8.0-android;net8.0-macos</TargetFrameworks>
     <AssemblyName>MvvmCross.Platforms.Wpf</AssemblyName>
     <RootNamespace>MvvmCross.Platforms.Wpf</RootNamespace>
     <Description>MvvmCross is the .NET MVVM framework for cross-platform solutions, including Maui iOS, Maui Android, Maui Forms, Windows and Mac.

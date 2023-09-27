@@ -3,7 +3,8 @@
 // See the LICENSE file in the project root for more information.
 
 using System;
-using AndroidX.Preference;
+using Android.Preferences;
+// //using AndroidX.Preference;
 using MvvmCross.Binding;
 using MvvmCross.Platforms.Android.WeakSubscription;
 

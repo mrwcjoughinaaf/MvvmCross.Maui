@@ -7,7 +7,7 @@ using Android.Content;
 using Android.OS;
 using Android.Runtime;
 using Android.Views;
-using AndroidX.Leanback.App;
+//using AndroidX.Leanback.App;
 using MvvmCross.Base;
 using MvvmCross.Platforms.Android.Views;
 

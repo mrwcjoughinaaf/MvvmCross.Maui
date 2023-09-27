@@ -5,7 +5,7 @@
 using Android.Content.Res;
 using Android.OS;
 using Android.Views;
-using AndroidX.AppCompat.Widget;
+//using AndroidX.AppCompat.Widget;
 using MvvmCross.Platforms.Android.Binding.BindingContext;
 using MvvmCross.Platforms.Android.Views.AppCompat;
 using MvvmCross.Platforms.Android.Views.Fragments;

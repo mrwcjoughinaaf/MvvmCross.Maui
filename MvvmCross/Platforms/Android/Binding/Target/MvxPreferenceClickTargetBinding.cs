@@ -1,6 +1,7 @@
 using System;
 using System.Windows.Input;
-using AndroidX.Preference;
+using Android.Preferences;
+// //using AndroidX.Preference;
 using MvvmCross.Binding;
 using MvvmCross.Platforms.Android.WeakSubscription;
 

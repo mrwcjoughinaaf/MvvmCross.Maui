@@ -1,11 +1,13 @@
-using AndroidX.Preference;
+//using AndroidX.Preference;
+
+using Android.Preferences;
 
 namespace MvvmCross.Platforms.Android.Binding
 {
     public static class MvxPreferencePropertyBindingExtensions
     {
-        public static string BindValue(this AndroidX.Preference.Preference preference)
-            => MvxPreferencePropertyBinding.Preference_Value;
+        // public static string BindValue(this AndroidX.Preference.Preference preference)
+            // => MvxPreferencePropertyBinding.Preference_Value;
 
         public static string BindValue(this ListPreference listPreference)
             => MvxPreferencePropertyBinding.ListPreference_Value;
@@ -16,7 +18,7 @@ namespace MvvmCross.Platforms.Android.Binding
         public static string BindChecked(this TwoStatePreference twoStatePreference)
             => MvxPreferencePropertyBinding.TwoStatePreference_Checked;
 
-        public static string BindClick(this AndroidX.Preference.Preference preference)
+        public static string BindClick(this Preference preference)
             => MvxPreferencePropertyBinding.Preference_Click;
     }
 }

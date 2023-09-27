@@ -5,8 +5,8 @@
 using System;
 using Android.Runtime;
 using Android.Widget;
-using AndroidX.Core.View;
-using AndroidX.RecyclerView.Widget;
+//using AndroidX.Core.View;
+//using AndroidX.RecyclerView.Widget;
 using MvvmCross.DroidX.RecyclerView;
 using MvvmCross.Platforms.Android.Binding.BindingContext;
 

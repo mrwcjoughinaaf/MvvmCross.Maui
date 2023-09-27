@@ -4,7 +4,7 @@
 
 using MvvmCross.Binding;
 using MvvmCross.Binding.Bindings.Target;
-using Toolbar = AndroidX.AppCompat.Widget.Toolbar;
+// using Toolbar = AndroidX.AppCompat.Widget.Toolbar;
 
 namespace MvvmCross.Platforms.Android.Binding.Target
 {

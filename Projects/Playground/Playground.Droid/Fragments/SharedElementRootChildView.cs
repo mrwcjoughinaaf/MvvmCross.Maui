@@ -5,7 +5,7 @@
 using Android.OS;
 using Android.Views;
 using Android.Widget;
-using AndroidX.RecyclerView.Widget;
+//using AndroidX.RecyclerView.Widget;
 using MvvmCross.DroidX.RecyclerView;
 using MvvmCross.Platforms.Android.Binding.BindingContext;
 using MvvmCross.Platforms.Android.Presenters.Attributes;
