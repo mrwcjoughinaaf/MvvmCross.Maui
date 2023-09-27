@@ -1,18 +1,16 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>net7.0;net7.0-android;net7.0-ios;net7.0-maccatalyst;net7.0-tvos;net7.0-macos;net8.0;net8.0-android;net8.0-ios;net8.0-maccatalyst;net8.0-tvos;net8.0-macos</TargetFrameworks>
+    <TargetFramework>net8.0</TargetFramework>
     <TargetFrameworks Condition=" '$(OS)' == 'Windows_NT' ">net7.0-windows10.0.19041.0;net8.0-windows10.0.19041.0;$(TargetFrameworks)</TargetFrameworks>
   </PropertyGroup>
-
   <PropertyGroup>
     <AssemblyName>MvvmCross</AssemblyName>
     <RootNamespace>MvvmCross</RootNamespace>
-    <Description>MvvmCross is the .NET MVVM framework for cross-platform solutions, including Xamarin iOS, Xamarin Android, Xamarin Forms, Windows and Mac.
+    <Description>MvvmCross is the .NET MVVM framework for cross-platform solutions, including Maui iOS, Maui Android, Maui Forms, Windows and Mac.
 
 This package contains the 'Core' libraries for MvvmCross</Description>
     <PackageId>MvvmCross</PackageId>
   </PropertyGroup>
-
   <ItemGroup>
     <Compile Remove="Platforms\**\*.cs" />
     <None Include="Platforms\**\*.cs" />
@@ -20,42 +18,30 @@ This package contains the 'Core' libraries for MvvmCross</Description>
     <Compile Remove="Resources\*.cs" />
     <None Include="readme.txt" pack="true" PackagePath="." />
   </ItemGroup>
-  
   <ItemGroup Condition=" '$(TargetFramework)' == 'net7.0' ">
     <Compile Include="Platforms\Netstandard\**\*.cs" />
     <Compile Include="Platforms\Console\**\*.cs" />
   </ItemGroup>
-
   <ItemGroup Condition=" '$(_MvxTargetPlatformIsiOS)' == 'True' Or '$(_MvxTargetPlatformIsMacCatalyst)' == 'True' ">
     <Compile Include="Platforms\Apple\**\*.cs" />
     <Compile Include="Platforms\Ios\**\*.cs" />
-    <Compile Include="Platforms\Xamarin\**\*.cs" />
+    <Compile Include="Platforms\Maui\**\*.cs" />
   </ItemGroup>
-
   <ItemGroup Condition=" '$(_MvxTargetPlatformIsmacOS)' == 'True' ">
     <Compile Include="Platforms\Apple\**\*.cs" />
     <Compile Include="Platforms\Mac\**\*.cs" />
-    <Compile Include="Platforms\Xamarin\**\*.cs" />
+    <Compile Include="Platforms\Maui\**\*.cs" />
   </ItemGroup>
-
   <ItemGroup Condition=" '$(_MvxTargetPlatformIstvOS)' == 'True' ">
     <Compile Include="Platforms\Apple\**\*.cs" />
     <Compile Include="Platforms\Tvos\**\*.cs" />
-    <Compile Include="Platforms\Xamarin\**\*.cs" />
+    <Compile Include="Platforms\Maui\**\*.cs" />
   </ItemGroup>
-
   <ItemGroup Condition=" '$(_MvxTargetPlatformIsAndroid)' == 'True' ">
     <Compile Include="Platforms\Android\**\*.cs" />
-    <Compile Include="Platforms\Xamarin\**\*.cs" />
+    <Compile Include="Platforms\Maui\**\*.cs" />
     <AndroidResource Include="Resources\**\*.xml" SubType="Designer" Generator="MSBuild:UpdateAndroidResources" />
-
-    <PackageReference Include="Xamarin.AndroidX.AppCompat" />
-    <PackageReference Include="Xamarin.AndroidX.Fragment" />
-    <PackageReference Include="Xamarin.AndroidX.Preference" />
-    <PackageReference Include="Xamarin.AndroidX.ViewPager" />
-    <PackageReference Include="Xamarin.Google.Android.Material" />
   </ItemGroup>
-
   <PropertyGroup Condition=" '$(_MvxTargetPlatformIsWindows)' == 'True' ">
     <TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
     <RootNamespace>MvvmCross</RootNamespace>
@@ -63,19 +49,17 @@ This package contains the 'Core' libraries for MvvmCross</Description>
     <UseWinUI>true</UseWinUI>
     <GenerateLibraryLayout>true</GenerateLibraryLayout>
   </PropertyGroup>
-
   <ItemGroup Condition="'$(_MvxTargetPlatformIsWindows)' == 'True' ">
     <Compile Include="Platforms\Windows\**\*.cs" />
     <Compile Include="Platforms\WinUi\**\*.cs" />
     <Page Include="Platforms\WinUi\**\*.xaml" SubType="Designer" Generator="MSBuild:Compile" />
     <None Update="**\*.xaml.cs" DependentUpon="%(Filename)" />
     <Compile Update="**\*.xaml.cs" DependentUpon="%(Filename)" />
-
-    <PackageReference Include="Microsoft.WindowsAppSDK" />
-    <PackageReference Include="Microsoft.Windows.SDK.BuildTools" />
+    <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.0.0-experimental1" />
+    <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.25936-preview" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.0-rc.1.23419.4" />
   </ItemGroup>
-
   <ItemGroup>
-    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" />
+    <PackageReference Include="Microsoft.Extensions.Logging"/>
   </ItemGroup>
 </Project>

@@ -1,17 +1,19 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>net7.0;net8.0</TargetFrameworks>
+    <TargetFramework>net8.0</TargetFramework>
     <AssemblyName>MvvmCross.Plugin.JsonLocalization</AssemblyName>
     <RootNamespace>MvvmCross.Plugin.JsonLocalization</RootNamespace>
-    <Description>MvvmCross is the .NET MVVM framework for cross-platform solutions, including Xamarin iOS, Xamarin Android, Xamarin Forms, Windows and Mac.
+    <Description>MvvmCross is the .NET MVVM framework for cross-platform solutions, including Maui iOS, Maui Android, Maui Forms, Windows and Mac.
 
 This package contains the 'JsonLocalization' plugin for MvvmCross</Description>
     <PackageId>MvvmCross.Plugin.JsonLocalization</PackageId>
   </PropertyGroup>
-
   <ItemGroup>
     <ProjectReference Include="..\..\MvvmCross\MvvmCross.csproj" />
     <ProjectReference Include="..\Json\MvvmCross.Plugin.Json.csproj" />
     <ProjectReference Include="..\ResourceLoader\MvvmCross.Plugin.ResourceLoader.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Logging"/>
   </ItemGroup>
 </Project>

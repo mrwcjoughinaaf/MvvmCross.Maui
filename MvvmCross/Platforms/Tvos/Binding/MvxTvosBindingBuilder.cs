@@ -156,7 +156,7 @@ namespace MvvmCross.Platforms.Tvos.Binding
         {
             base.FillAutoValueConverters(autoValueConverters);
 
-            //register converter for xamarin unified types
+            //register converter for maui unified types
             foreach (var kvp in MvxUnifiedTypesValueConverter.UnifiedTypeConversions)
                 autoValueConverters.Register(kvp.Key, kvp.Value, _unifiedValueTypesConverter);
         }

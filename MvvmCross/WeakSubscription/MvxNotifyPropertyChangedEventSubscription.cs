@@ -14,7 +14,7 @@ namespace MvvmCross.WeakSubscription
     {
         private static readonly EventInfo PropertyChangedEventInfo = typeof(INotifyPropertyChanged).GetEvent("PropertyChanged");
 
-        // This code ensures the PropertyChanged event is not stripped by Xamarin linker
+        // This code ensures the PropertyChanged event is not stripped by Maui linker
         // see https://github.com/MvvmCross/MvvmCross/pull/453
         public static void LinkerPleaseInclude(INotifyPropertyChanged iNotifyPropertyChanged)
         {

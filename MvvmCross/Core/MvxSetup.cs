@@ -56,7 +56,7 @@ namespace MvvmCross.Core
                         if (ViewAssemblies.Count == 0)
                         {
                             // fall back to all assemblies. Assembly.GetEntryAssembly() always returns
-                            // null on Xamarin platforms do not use it!
+                            // null on Maui platforms do not use it!
                             ViewAssemblies.AddRange(AppDomain.CurrentDomain.GetAssemblies());
                         }
 

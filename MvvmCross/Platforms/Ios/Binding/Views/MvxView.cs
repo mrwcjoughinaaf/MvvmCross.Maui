@@ -16,9 +16,9 @@ namespace MvvmCross.Platforms.Ios.Binding.Views
 
         // Constructor that will bind managed object to its unmanaged counterpart. This constructor 
         // should not have any implementation and is only used for types that can be created by the
-        // interface builder (or Xamarin iOS designer). More documentation can be found:
-        // - here: https://developer.xamarin.com/guides/ios/user_interface/designer/ios_designable_controls_overview/
-        // - and here: https://developer.xamarin.com/guides/ios/under_the_hood/api_design/#Types_and_Interface_Builder
+        // interface builder (or Maui iOS designer). More documentation can be found:
+        // - here: https://developer.maui.com/guides/ios/user_interface/designer/ios_designable_controls_overview/
+        // - and here: https://developer.maui.com/guides/ios/under_the_hood/api_design/#Types_and_Interface_Builder
         public MvxView(NativeHandle handle) : base(handle) { }
 
         public MvxView()

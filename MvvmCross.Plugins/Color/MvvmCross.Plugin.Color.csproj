@@ -1,56 +1,50 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>net7.0;net7.0-android;net7.0-ios;net7.0-maccatalyst;net8.0;net8.0-android;net8.0-ios;net8.0-maccatalyst</TargetFrameworks>
+    <TargetFramework>net8.0</TargetFramework>
     <TargetFrameworks Condition=" '$(OS)' == 'Windows_NT' ">net7.0-windows10.0.19041.0;net8.0-windows10.0.19041.0;$(TargetFrameworks)</TargetFrameworks>
   </PropertyGroup>
-  
   <PropertyGroup>
     <AssemblyName>MvvmCross.Plugin.Color</AssemblyName>
     <RootNamespace>MvvmCross.Plugin.Color</RootNamespace>
-    <Description>MvvmCross is the .NET MVVM framework for cross-platform solutions, including Xamarin iOS, Xamarin Android, Xamarin Forms, Windows and Mac.
+    <Description>MvvmCross is the .NET MVVM framework for cross-platform solutions, including Maui iOS, Maui Android, Maui Forms, Windows and Mac.
 
 This package contains the 'Color' plugin for MvvmCross</Description>
     <PackageId>MvvmCross.Plugin.Color</PackageId>
   </PropertyGroup>
-
   <ItemGroup>
     <Compile Remove="Platforms\**\*.cs" />
     <None Include="Platforms\**\*.cs" />
     <None Include="Resources\*.cs" />
     <Compile Remove="Resources\*.cs" />
   </ItemGroup>
-
   <ItemGroup Condition=" '$(_MvxTargetPlatformIsiOS)' == 'True' Or '$(_MvxTargetPlatformIsMacCatalyst)' == 'True' ">
     <Compile Include="Platforms\Apple\**\*.cs" />
     <Compile Include="Platforms\Ios\**\*.cs" />
-    <Compile Include="Platforms\Xamarin\**\*.cs" />
+    <Compile Include="Platforms\Maui\**\*.cs" />
   </ItemGroup>
-
   <ItemGroup Condition=" '$(_MvxTargetPlatformIsmacOS)' == 'True' ">
     <Compile Include="Platforms\Apple\**\*.cs" />
     <Compile Include="Platforms\Mac\**\*.cs" />
-    <Compile Include="Platforms\Xamarin\**\*.cs" />
+    <Compile Include="Platforms\Maui\**\*.cs" />
   </ItemGroup>
-
   <ItemGroup Condition=" '$(_MvxTargetPlatformIstvOS)' == 'True' ">
     <Compile Include="Platforms\Apple\**\*.cs" />
     <Compile Include="Platforms\Tvos\**\*.cs" />
-    <Compile Include="Platforms\Xamarin\**\*.cs" />
+    <Compile Include="Platforms\Maui\**\*.cs" />
   </ItemGroup>
-
   <ItemGroup Condition=" '$(_MvxTargetPlatformIsAndroid)' == 'True' ">
     <Compile Include="Platforms\Android\**\*.cs" />
-    <Compile Include="Platforms\Xamarin\**\*.cs" />
+    <Compile Include="Platforms\Maui\**\*.cs" />
   </ItemGroup>
-
   <ItemGroup Condition=" '$(_MvxTargetPlatformIsWindows)' == 'True' ">
     <Compile Include="Platforms\WinUi\**\*.cs" />
-
-    <PackageReference Include="Microsoft.WindowsAppSDK" />
-    <PackageReference Include="Microsoft.Windows.SDK.BuildTools" />
+    <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.0.0-experimental1" />
+    <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.25936-preview" />
   </ItemGroup>
-
   <ItemGroup>
     <ProjectReference Include="..\..\MvvmCross\MvvmCross.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Logging"/>
   </ItemGroup>
 </Project>

@@ -22,7 +22,7 @@ namespace MvvmCross.Binding.Bindings.Target
 
             // 	addMethod is used because of error:
             // "Attempting to JIT compile method '(wrapper delegate-invoke) <Module>:invoke_void__this___UIControl_EventHandler (UIKit.UIControl,System.EventHandler)' while running with --aot-only."
-            // see https://bugzilla.xamarin.com/show_bug.cgi?id=3682
+            // see https://bugzilla.maui.com/show_bug.cgi?id=3682
             var addMethod = _targetEventInfo.GetAddMethod();
 
             // we only handle EventHandler's here

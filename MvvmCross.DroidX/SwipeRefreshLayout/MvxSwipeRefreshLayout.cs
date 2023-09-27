@@ -11,7 +11,7 @@ using Android.Util;
 namespace MvvmCross.DroidX
 {
     [Register("mvvmcross.droidx.MvxSwipeRefreshLayout")]
-    public class MvxSwipeRefreshLayout : AndroidX.SwipeRefreshLayout.Widget.SwipeRefreshLayout
+    public class MvxSwipeRefreshLayout : AndroidX.Widget.SwipeRefreshLayout.Widget.SwipeRefreshLayout
     {
         protected MvxSwipeRefreshLayout(IntPtr javaReference, JniHandleOwnership transfer)
             : base(javaReference, transfer)

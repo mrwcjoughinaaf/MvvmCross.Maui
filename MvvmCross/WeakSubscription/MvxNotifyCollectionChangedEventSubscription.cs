@@ -14,7 +14,7 @@ namespace MvvmCross.WeakSubscription
     {
         private static readonly EventInfo EventInfo = typeof(INotifyCollectionChanged).GetEvent("CollectionChanged");
 
-        // This code ensures the CollectionChanged event is not stripped by Xamarin linker
+        // This code ensures the CollectionChanged event is not stripped by Maui linker
         // see https://github.com/MvvmCross/MvvmCross/pull/453
         public static void LinkerPleaseInclude(INotifyCollectionChanged iNotifyCollectionChanged)
         {

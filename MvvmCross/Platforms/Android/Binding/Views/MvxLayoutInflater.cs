@@ -107,7 +107,7 @@ namespace MvvmCross.Platforms.Android.Binding.Views
             return new MvxLayoutInflater(this, newContext, _bindingVisitor, true);
         }
 
-        // We can't call this.  See: https://bugzilla.xamarin.com/show_bug.cgi?id=30843
+        // We can't call this.  See: https://bugzilla.maui.com/show_bug.cgi?id=30843
         //public override View Inflate(XmlReader parser, ViewGroup root, bool attachToRoot)
         //{
         //    SetPrivateFactoryInternal();
@@ -217,7 +217,7 @@ namespace MvvmCross.Platforms.Android.Binding.Views
         // Note: setFactory/setFactory2 are implemented with export
         // because there's a bug in the generator that doesn't
         // mark the Factory/Factory2 setters as virtual.
-        // See: https://bugzilla.xamarin.com/show_bug.cgi?id=30764
+        // See: https://bugzilla.maui.com/show_bug.cgi?id=30764
         [Export]
         public void setFactory(IFactory factory)
         {

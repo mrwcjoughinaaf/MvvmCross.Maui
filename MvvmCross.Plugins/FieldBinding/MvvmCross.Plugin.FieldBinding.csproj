@@ -1,15 +1,17 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>net7.0;net8.0</TargetFrameworks>
+    <TargetFramework>net8.0</TargetFramework>
     <AssemblyName>MvvmCross.Plugin.FieldBinding</AssemblyName>
     <RootNamespace>MvvmCross.Plugin.FieldBinding</RootNamespace>
-    <Description>MvvmCross is the .NET MVVM framework for cross-platform solutions, including Xamarin iOS, Xamarin Android, Xamarin Forms, Windows and Mac.
+    <Description>MvvmCross is the .NET MVVM framework for cross-platform solutions, including Maui iOS, Maui Android, Maui Forms, Windows and Mac.
 
 This package contains the 'FieldBinding' plugin for MvvmCross</Description>
     <PackageId>MvvmCross.Plugin.FieldBinding</PackageId>
   </PropertyGroup>
-
   <ItemGroup>
     <ProjectReference Include="..\..\MvvmCross\MvvmCross.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Logging"/>
   </ItemGroup>
 </Project>

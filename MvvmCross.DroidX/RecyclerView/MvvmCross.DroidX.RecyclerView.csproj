@@ -1,26 +1,19 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>net7.0-android;net8.0-android</TargetFrameworks>
+    <TargetFramework>net8.0-android</TargetFramework>
     <AssemblyName>MvvmCross.DroidX.RecyclerView</AssemblyName>
     <RootNamespace>MvvmCross.DroidX.RecyclerView</RootNamespace>
-    <Description>MvvmCross is the .NET MVVM framework for cross-platform solutions, including Xamarin iOS, Xamarin Android, Xamarin Forms, Windows and Mac.
+    <Description>MvvmCross is the .NET MVVM framework for cross-platform solutions, including Maui iOS, Maui Android, Maui Forms, Windows and Mac.
 
 This package contains AndroidX RecyclerView support for MvvmCross.</Description>
     <PackageId>MvvmCross.DroidX.RecyclerView</PackageId>
   </PropertyGroup>
-  
   <ItemGroup>
     <None Include="Resources\*.cs" />
     <Compile Remove="Resources\*.cs" />
     <AndroidResource Include="Resources\**\*.xml" Generator="MSBuild:UpdateAndroidResources" />
   </ItemGroup>
-  
-  <ItemGroup>
-    <PackageReference Include="Xamarin.AndroidX.RecyclerView" />
-  </ItemGroup>
-  
   <ItemGroup>
     <ProjectReference Include="..\..\MvvmCross\MvvmCross.csproj" />
   </ItemGroup>
-
 </Project>

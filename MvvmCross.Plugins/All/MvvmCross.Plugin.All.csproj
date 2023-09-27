@@ -1,21 +1,19 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>net7.0;net8.0</TargetFrameworks>
+    <TargetFramework>net8.0</TargetFramework>
     <AssemblyName>MvvmCross.Plugin.All</AssemblyName>
     <RootNamespace>MvvmCross.Plugin.All</RootNamespace>
-    <Description>MvvmCross is the .NET MVVM framework for cross-platform solutions, including Xamarin iOS, Xamarin Android, Xamarin Forms, Windows and Mac.
+    <Description>MvvmCross is the .NET MVVM framework for cross-platform solutions, including Maui iOS, Maui Android, Maui Forms, Windows and Mac.
 
 This package contains all plugins for MvvmCross</Description>
     <PackageId>MvvmCross.Plugin.All</PackageId>
   </PropertyGroup>
-
   <ItemGroup>
     <Compile Remove="Platforms\**\*.cs" />
     <None Include="Platforms\**\*.cs" />
     <None Include="Resources\*.cs" />
     <Compile Remove="Resources\*.cs" />
   </ItemGroup>
-
   <ItemGroup>
     <ProjectReference Include="..\..\MvvmCross\MvvmCross.csproj" />
     <ProjectReference Include="..\Color\MvvmCross.Plugin.Color.csproj" />
@@ -27,5 +25,8 @@ This package contains all plugins for MvvmCross</Description>
     <ProjectReference Include="..\ResourceLoader\MvvmCross.Plugin.ResourceLoader.csproj" />
     <ProjectReference Include="..\ResxLocalization\MvvmCross.Plugin.ResxLocalization.csproj" />
     <ProjectReference Include="..\Visibility\MvvmCross.Plugin.Visibility.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Logging"/>
   </ItemGroup>
 </Project>

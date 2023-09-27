@@ -10,7 +10,7 @@ using System.Windows.Input;
 
 namespace $YourNameSpace$
 {
-    // This class is never actually executed, but when Xamarin linking is enabled it does how to ensure types and properties
+    // This class is never actually executed, but when Maui linking is enabled it does how to ensure types and properties
     // are preserved in the deployed app
     [Android.Runtime.Preserve(AllMembers = true)]
     public class LinkerPleaseInclude
