@@ -21,7 +21,7 @@
     <RuntimeIdentifier>iossimulator-x64</RuntimeIdentifier>
   </PropertyGroup>
    <ItemGroup> 
-     <PackageReference Include="Microsoft.Maui.Essentials" /> 
+     <PackageReference Include="Microsoft.Maui.Essentials" Version="8.0.0-rc.1.9171" /> 
      <PackageReference Include="Serilog.Extensions.Logging" /> 
      <PackageReference Include="Serilog" /> 
    </ItemGroup> 

@@ -11,8 +11,8 @@
     <PackageReference Include="Serilog"/>
     <PackageReference Include="Serilog.Sinks.Async"/>
     <PackageReference Include="Serilog.Sinks.Trace"/>
-    <PackageReference Include="Serilog.Extensions.Logging"/>
-    <PackageReference Include="Microsoft.Maui.Essentials"/>
+    <PackageReference Include="Serilog.Extensions.Logging" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Maui.Essentials" Version="8.0.0-rc.1.9171" />
   </ItemGroup>
   <ItemGroup>
     <!--    <ProjectReference Include="..\..\..\MvvmCross.DroidX\Material\MvvmCross.DroidX.Material.csproj" />-->

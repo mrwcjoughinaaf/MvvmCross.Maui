@@ -10,7 +10,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionIt
 		build.cake = build.cake
 		Directory.Build.props = Directory.Build.props
 		Directory.Build.targets = Directory.Build.targets
-		Directory.Packages.props = Directory.Packages.props
 		LICENSE = LICENSE
 	EndProjectSection
 EndProject
@@ -1188,6 +1187,7 @@ Global
 		{6F75D6E2-F188-4C8C-8EB1-518039299E66}.Release|x86.ActiveCfg = Release|Any CPU
 		{6F75D6E2-F188-4C8C-8EB1-518039299E66}.Release|x86.Build.0 = Release|Any CPU
 		{6F75D6E2-F188-4C8C-8EB1-518039299E66}.Release|x86.Deploy.0 = Release|Any CPU
+		{6F75D6E2-F188-4C8C-8EB1-518039299E66}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
 		{8DFE6A59-AD7D-4916-ABF3-D2D1B0F55858}.Ad-Hoc|Any CPU.ActiveCfg = Debug|Any CPU
 		{8DFE6A59-AD7D-4916-ABF3-D2D1B0F55858}.Ad-Hoc|Any CPU.Build.0 = Debug|Any CPU
 		{8DFE6A59-AD7D-4916-ABF3-D2D1B0F55858}.Ad-Hoc|ARM.ActiveCfg = Debug|Any CPU
@@ -1618,6 +1618,7 @@ Global
 		{1B6539CF-6CE4-4421-93AD-68452B070BC3}.Release|x64.Build.0 = Release|Any CPU
 		{1B6539CF-6CE4-4421-93AD-68452B070BC3}.Release|x86.ActiveCfg = Release|Any CPU
 		{1B6539CF-6CE4-4421-93AD-68452B070BC3}.Release|x86.Build.0 = Release|Any CPU
+		{1B6539CF-6CE4-4421-93AD-68452B070BC3}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

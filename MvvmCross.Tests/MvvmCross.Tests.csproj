@@ -12,6 +12,6 @@ This package contains the 'Test Helpers' for MvvmCross</Description>
     <ProjectReference Include="..\MvvmCross\MvvmCross.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.Extensions.Logging"/>
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="8.0.0-rc.1.23419.4" />
   </ItemGroup>
 </Project>

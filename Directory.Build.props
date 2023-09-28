@@ -6,7 +6,7 @@
     <PackageIcon>icon.png</PackageIcon>
     <Authors>.NET Foundation and Contributors</Authors>
     <Owners>MvvmCross;slodge;cheesebaron</Owners>
-    <PackageTags>mvvm;mvvmcross;xamarin;android;ios;mac</PackageTags>
+    <PackageTags>mvvm;mvvmcross;maui;android;ios;mac</PackageTags>
     <PackageReleaseNotes>https://github.com/MvvmCross/MvvmCross/blob/develop/CHANGELOG.md</PackageReleaseNotes>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <NeutralLanguage>en-US</NeutralLanguage>
@@ -15,7 +15,8 @@
     <RepositoryUrl>https://github.com/MvvmCross/MvvmCross</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <Product>$(AssemblyName) ($(TargetFramework))</Product>
-    <Version>8.2.0-net8.1</Version>
+    <NetVersion>net8.0</NetVersion>
+    <Version>8.2.0-net8.0</Version>
 
     <!--<Nullable>enable</Nullable>-->
     <LangVersion>latest</LangVersion>
@@ -25,7 +26,7 @@
     <IsTestProject>$(MSBuildProjectName.Contains('UnitTest'))</IsTestProject>
     <IsLibraryProject>$(MSBuildProjectName.Contains('MvvmCross'))</IsLibraryProject>
 
-    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+    <ManagePackageVersionsCentrally>false</ManagePackageVersionsCentrally>
 
     <_MvxTargetPlatformIdentifier>$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)'))</_MvxTargetPlatformIdentifier>
     <_MvxTargetPlatformIsAndroid>false</_MvxTargetPlatformIsAndroid>
